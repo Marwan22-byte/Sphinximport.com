@@ -1,0 +1,76 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "nodemon": {
+      "name": "nodemon",
+      "severity": "critical",
+      "isDirect": true,
+      "via": [
+        "supports-color"
+      ],
+      "effects": [],
+      "range": "0.0.0-development || >=1.15.2-alpha.1",
+      "nodes": [
+        "node_modules/nodemon"
+      ],
+      "fixAvailable": {
+        "name": "nodemon",
+        "version": "1.15.1",
+        "isSemVerMajor": true
+      }
+    },
+    "supports-color": {
+      "name": "supports-color",
+      "severity": "critical",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1107293,
+          "name": "supports-color",
+          "dependency": "supports-color",
+          "title": "Malware in supports-color",
+          "url": "https://github.com/advisories/GHSA-pj3j-3w3f-j752",
+          "severity": "critical",
+          "cwe": [
+            "CWE-506"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": ">=0"
+        }
+      ],
+      "effects": [
+        "nodemon"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/supports-color"
+      ],
+      "fixAvailable": {
+        "name": "nodemon",
+        "version": "1.15.1",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 2,
+      "total": 2
+    },
+    "dependencies": {
+      "prod": 45,
+      "dev": 28,
+      "optional": 1,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 72
+    }
+  }
+}
