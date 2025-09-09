@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chemical Products - Sphinx</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5faff;
+      color: #222;
+      margin: 0;
+    }
+
+    header {
+      background: #fff;
+      box-shadow: 0 2px 12px #0e73731c;
+      border-bottom: 2px solid #e4eff7;
+      padding: 20px 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #194d9f;
+      margin: 40px 0 20px;
+    }
+
+    .chemical-section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    .chemical-section h2 {
+      color: #1dc4b3;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .chemical-section img {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: 0 auto 15px auto;
+      border-radius: 10px;
+    }
+
+    table {
+      width: 95%;
+      margin: 0 auto 20px auto;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e8f8f7;
+      color: #194d9f;
+    }
+
+    footer {
+      background: #fff;
+      border-top: 2px solid #e4eff7;
+      padding: 20px 0;
+      text-align: center;
+      color: #194d9f;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      color: #194d9f;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 16px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #e8f8f7;
+      color: #1dc4b3;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      box-shadow: 0 8px 24px #0000001a;
+      padding: 10px;
+      border-radius: 6px;
+      z-index: 10;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu li {
+      padding: 6px 0;
+    }
+
+    .dropdown-menu a {
+      padding: 8px 16px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav-flex">
+      <div class="logo">
+        <img src="https://i.postimg.cc/1t5QdhS0/temp-Image-TG5-Ij-L.avif" alt="Sphinx Logo" height="50"/>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li class="dropdown">
+            <a href="products.html" class="active">Products</a>
+            <ul class="dropdown-menu">
+              <li><a href="import.html">Import</a></li>
+              <li><a href="export.html">Export</a></li>
+              <li><a href="coal.html">Coal</a></li>
+              <li><a href="chemicals.html">Chemicals</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Chemical Types & Export Specifications</h1>
+
+    <!-- Ethanol -->
+    <div class="chemical-section">
+      <h2>Ethanol (C₂H₅OH)</h2>
+      <img src="assets/ethanol.jpg" alt="Ethanol Chemical Bottle" />
+      <table>
+        <tr><th>CAS No</th><td>64-17-5</td></tr>
+        <tr><th>Calcium Carbonate</th><td>85% – 90%</td></tr>
+        <tr><th>Organic Matter</th><td>5% – 10%</td></tr>
+        <tr><th>Moisture</th><td>&lt; 8%</td></tr>
+        <tr><th>pH Level</th><td>Neutral to slightly alkaline</td></tr>
+        <tr><th>Packaging</th><td>
+          Small retail packs (2/4 pcs), bulk PP bags (5–25kg), 1-ton jumbo bags, bubble wrap protection
+        </td></tr>
+      </table>
+    </div>
+
+    <!-- Calcium Carbonate -->
+    <div class="chemical-section">
+      <h2>Calcium Carbonate (CaCO₃)</h2>
+      <table>
+        <tr><th>Composition</th><td>85% – 90%</td></tr>
+        <tr><th>Packaging</th><td>Retail, bulk PP bags (5–25kg), jumbo bags, protective padding</td></tr>
+      </table>
+    </div>
+
+    <!-- Organic Matter -->
+    <div class="chemical-section">
+      <h2>Organic Matter</h2>
+      <table>
+        <tr><th>Composition</th><td>5% – 10%</td></tr>
+        <tr><th>Packaging</th><td>Retail, bulk PP bags (5–25kg), jumbo bags, protective padding</td></tr>
+      </table>
+    </div>
+
+    <!-- Moisture -->
+    <div class="chemical-section">
+      <h2>Moisture</h2>
+      <table>
+        <tr><th>Composition</th><td>&lt; 8%</td></tr>
+        <tr><th>Packaging</th><td>Retail, bulk PP bags (5–25kg), jumbo bags, protective padding</td></tr>
+      </table>
+    </div>
+
+    <!-- pH Level -->
+    <div class="chemical-section">
+      <h2>pH Level</h2>
+      <table>
+        <tr><th>Composition</th><td>Neutral to slightly alkaline</td></tr>
+        <tr><th>Packaging</th><td>Retail, bulk PP bags (5–25kg), jumbo bags, protective padding</td></tr>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Sphinx Import & Export. All rights reserved.</p>
+      <p>Contact us: sphinx.co.limited@gmail.com | +20 100 000 0000</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marble Products - Sphinx</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5faff;
+      color: #222;
+      margin: 0;
+    }
+
+    header {
+      background: #fff;
+      box-shadow: 0 2px 12px #0e73731c;
+      border-bottom: 2px solid #e4eff7;
+      padding: 20px 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #194d9f;
+      margin: 40px 0 20px;
+    }
+
+    .marble-section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    .marble-section h2 {
+      color: #1dc4b3;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .marble-section img {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: 0 auto 15px auto;
+      border-radius: 10px;
+    }
+
+    table {
+      width: 95%;
+      margin: 0 auto 20px auto;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e8f8f7;
+      color: #194d9f;
+    }
+
+    footer {
+      background: #fff;
+      border-top: 2px solid #e4eff7;
+      padding: 20px 0;
+      text-align: center;
+      color: #194d9f;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      color: #194d9f;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 16px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #e8f8f7;
+      color: #1dc4b3;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      box-shadow: 0 8px 24px #0000001a;
+      padding: 10px;
+      border-radius: 6px;
+      z-index: 10;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu li {
+      padding: 6px 0;
+    }
+
+    .dropdown-menu a {
+      padding: 8px 16px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container nav-flex">
+      <div class="logo">
+        <img src="https://i.postimg.cc/1t5QdhS0/temp-Image-TG5-Ij-L.avif" alt="Sphinx Logo" height="50"/>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li class="dropdown">
+            <a href="products.html" class="active">Products</a>
+            <ul class="dropdown-menu">
+              <li><a href="import.html">Import</a></li>
+              <li><a href="export.html">Export</a></li>
+              <li><a href="coal.html">Coal</a></li>
+              <li><a href="marble.html">Marble</a></li>
+              <li><a href="chemicals.html">Chemicals</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Egyptian Marble Export Specifications</h1>
+
+    <!-- Galala -->
+    <div class="marble-section">
+      <h2>Galala Marble</h2>
+      <img src="https://i.ibb.co/3m4p8Y9/galala-marble.jpg" alt="Galala Marble">
+      <table>
+        <tr><th>Color</th><td>Beige, Cream</td></tr>
+        <tr><th>Tile Sizes</th><td>300×300, 600×600 mm</td></tr>
+        <tr><th>Slab Sizes</th><td>2400–3000 × 1200–2000 mm</td></tr>
+        <tr><th>Thickness</th><td>15–30 mm</td></tr>
+        <tr><th>Finishes</th><td>Polished, Honed, Tumbled</td></tr>
+      </table>
+    </div>
+
+    <!-- Sunny -->
+    <div class="marble-section">
+      <h2>Sunny Marble</h2>
+      <img src="https://i.ibb.co/mNDML45/sunny-marble.jpg" alt="Sunny Marble">
+      <table>
+        <tr><th>Color</th><td>Yellow-Beige (Cloudy / Split Face)</td></tr>
+        <tr><th>Formats</th><td>Tiles & Slabs</td></tr>
+        <tr><th>Thickness</th><td>15–30 mm</td></tr>
+        <tr><th>Special Use</th><td>Split face for decorative facades</td></tr>
+      </table>
+    </div>
+
+    <!-- Silvia -->
+    <div class="marble-section">
+      <h2>Silvia Marble</h2>
+      <img src="https://i.ibb.co/74wTjF1/silvia-marble.jpg" alt="Silvia Marble">
+      <table>
+        <tr><th>Color</th><td>Light Beige with Veins</td></tr>
+        <tr><th>Usage</th><td>Floors, Counters</td></tr>
+        <tr><th>Finishes</th><td>Polished, Brushed</td></tr>
+        <tr><th>Thickness</th><td>18–30 mm</td></tr>
+      </table>
+    </div>
+
+    <!-- Triesta -->
+    <div class="marble-section">
+      <h2>Triesta Marble</h2>
+      <img src="https://i.ibb.co/Dfg7GC9/triesta-marble.jpg" alt="Triesta Marble">
+      <table>
+        <tr><th>Color</th><td>Light to Dark Beige</td></tr>
+        <tr><th>Usage</th><td>Interior & Exterior</td></tr>
+        <tr><th>Finishes</th><td>Honed, Flamed, Sandblasted</td></tr>
+        <tr><th>Custom Sizes</th><td>Available</td></tr>
+      </table>
+    </div>
+
+    <!-- Other Types -->
+    <div class="marble-section">
+      <h2>Samaha, Khatmia, Sinai Pearl, Mill Brown</h2>
+      <img src="https://i.ibb.co/mJ0TsbP/egyptian-marbles.jpg" alt="Various Egyptian Marble">
+      <table>
+        <tr><th>Type</th><td>Regional Varieties</td></tr>
+        <tr><th>Formats</th><td>Block, Tile, Slab</td></tr>
+        <tr><th>Finishes</th><td>Polished, Tumbled, Sandblasted</td></tr>
+        <tr><th>Export Options</th><td>20ft Containers or LCL Loads</td></tr>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Sphinx Import & Export. All rights reserved.</p>
+      <p>Contact us: sphinx.co.limited@gmail.com | +20 100 000 0000</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
+
+
