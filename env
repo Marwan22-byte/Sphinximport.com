@@ -1,0 +1,12 @@
+# MongoDB connection string
+MONGO_URI=mongodb+srv://sphinx_admin:omar1234@sphinx.nkx6s2l.mongodb.net/sphinx_admin?retryWrites=true&w=majority&appName=Sphinx
+
+# Express server port
+PORT=5000
+
+# Admin credentials
+ADMIN_EMAIL=omarshehab@sphinximport.com
+ADMIN_PASSWORD=Omar#CEO@sphinx
+
+
+
